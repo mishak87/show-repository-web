@@ -1,5 +1,5 @@
 {CompositeDisposable} = require 'atom'
-{shell} = require 'shell'
+Shell = require 'shell'
 GitUrlParse = require 'git-url-parse'
 
 module.exports = ShowRepositoryWeb =
@@ -19,7 +19,7 @@ module.exports = ShowRepositoryWeb =
   openInBrowser: ->
     @getUrl().then(
       (url) ->
-        shell.openExternal url
+        Shell.openExternal url
         atom.notifications.addInfo(
           'Opening repository URL in browser.'
           { detail: url }
