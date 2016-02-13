@@ -1,7 +1,7 @@
 {
   "name": "show-repository-web",
   "main": "./lib/show-repository-web",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shortcut to display file on repository web or to copy its URL.",
   "keywords": [
     "git",
