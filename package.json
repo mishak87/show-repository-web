@@ -1,0 +1,23 @@
+{
+  "name": "show-repository-web",
+  "main": "./lib/show-repository-web",
+  "version": "0.0.0",
+  "description": "Shortcut to display file on repository web or to copy its URL.",
+  "keywords": [
+    "git",
+    "github",
+    "bitbucket",
+    "gitlab"
+  ],
+  "activationCommands": {
+    "atom-workspace": "show-repository-web:copy-url"
+  },
+  "repository": "https://github.com/mishak87/show-repository-web",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "git-url-parse": "^5.0.1"
+  }
+}

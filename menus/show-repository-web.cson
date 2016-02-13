@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Open File Repository in Browser'
+      'command': 'show-repository-web:open-in-browser'
+    }
+    {
+      'label': 'Copy File Repository URL'
+      'command': 'show-repository-web:copy-url'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'show-repository-web'
+      'submenu': [
+        {
+          'label': 'Open in Browser'
+          'command': 'show-repository-web:open-in-browser'
+        }
+        {
+          'label': 'Copy URL'
+          'command': 'show-repository-web:copy-url'
+        }
+      ]
+    ]
+  }
+]
